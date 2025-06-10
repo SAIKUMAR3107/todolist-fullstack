@@ -10,7 +10,16 @@
     <button :style="{ height: '40px', width: '100px' }" @click="onAdd">
       Add
     </button>
-    <EachCardComponent :data="data.todos" />
+    <div
+      :style="{
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }"
+    >
+      <EachCardComponent :data="data.todos" />
+    </div>
   </div>
 </template>
 <script lang="ts" setup>
